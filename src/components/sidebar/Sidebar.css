@@ -1,0 +1,78 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    height: 100vh;
+    background-color: #2f3135;
+}
+.Sidebar__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: #2f3135;
+    border-bottom: 3px solid #26282c;
+}
+.Sidebar__channels{
+    flex: 1;
+    flex-direction: column;
+}
+.Sidebar__channelsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:  #2f3135;
+    color: gray;
+}
+
+.Sidebar__header{
+    display: flex;
+    flex-direction: row;
+}
+.Sidebar__addChanel{
+    cursor: pointer;
+}
+.Sidebar__voice,
+.Sidebar__profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    border-top: 1px solid grey
+}
+.Sidebar__voiceIcon{
+    color: #4fb185;
+}
+.Sidebar__voiceInfo,
+.Sidebar__profileInfo{
+    flex: 1;
+    padding: 10px;
+}
+.Sidebar__voiceInfo h3{
+    color: #4fb185;
+}
+.Sidebar__voiceInfo p{
+    font-size: smaller;
+}
+.Sidebar__voiceIcons .MuiSvgIcon-root,
+.Sidebar__profileIcons .MuiSvgIcon-root {
+    padding: 10px;
+}
+
+.Sidebar__profileInfo h3{
+ color: white;
+}
+
+.Sidebar__channelList{
+    display: flex;
+    flex-direction: column;
+}
+.Sidebar__avatar{
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.Message{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+.Message__info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Message__timestamp{
+    color: grey;
+    margin-left: 20px;
+    font-size: x-small;
+}
