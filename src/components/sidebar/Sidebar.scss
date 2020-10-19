@@ -18,6 +18,8 @@
 .Sidebar__channels{
     flex: 1;
     flex-direction: column;
+    overflow: scroll;
+
 }
 .Sidebar__channelsHeader{
     display: flex;
@@ -27,6 +29,9 @@
     padding: 10px;
     background-color:  #2f3135;
     color: gray;
+    position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
 }
 
 .Sidebar__header{

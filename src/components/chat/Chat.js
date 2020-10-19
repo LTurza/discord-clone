@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Chat.css';
+import './Chat.scss';
 import ChatHeader from './../ChatHeader/ChatHeader.js';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
@@ -39,7 +39,6 @@ function Chat() {
             user: user,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
-
         setInput("")
     }
 
@@ -48,11 +47,12 @@ function Chat() {
             <ChatHeader channelName={channelName} />
 
             <div className="Chat__messages">
-                {messages.map(message => (
+                {messages.map((message, index) => (
                     <Message
                         timestamp={message.timestamp}
                         user={message.user}
                         message={message.message}
+                        key={index}
                     />
                 ))}
             </div>

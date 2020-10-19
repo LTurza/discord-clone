@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setChannelInfo } from '../../features/appSlice'
-import './SidebarChannel.css'
+import './SidebarChannel.scss'
 
 function SidebarChannel({ id, channelName }) {
     const dispatch = useDispatch();
@@ -12,7 +12,7 @@ function SidebarChannel({ id, channelName }) {
         }))}>
             <h4>
                 <span className="SidebarChannel__hash">#</span>
-                {channelName}
+                {channelName.length >= 20 ? channelName.slice(0, 20) + "..." : channelName}
             </h4>
         </div>
     )

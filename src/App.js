@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import './App.css';
+import './App.scss';
 import Sidebar from './components/sidebar/sidebar.js'
 import Chat from './components/chat/Chat';
 import { selectUser } from './features/userSlice';

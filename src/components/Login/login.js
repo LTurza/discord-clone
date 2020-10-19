@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css';
+import './Login.scss';
 import { auth, provider } from '../../firabase';
 import { Button } from '@material-ui/core'
 

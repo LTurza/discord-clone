@@ -1,5 +1,5 @@
 import React from 'react'
-import './ChatHeader.css'
+import './ChatHeader.scss'
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import EditLocationIcon from '@material-ui/icons/EditLocation';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
